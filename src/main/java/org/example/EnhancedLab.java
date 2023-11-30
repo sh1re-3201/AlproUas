@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class EnhancedLab {
     // Array untuk menyimpan nomor pasien yang sudah terdaftar
-    static short[] nomorPasienTerdaftar = {12334, 12311, 15334, 12313, 26713};
+    static short[] nomorRekaMedis = new short[50];
 
     public static void main(String[] args) {
         int asep = 1;
@@ -20,6 +20,14 @@ public class EnhancedLab {
                 menuAwal();
                 break;
         }
+    }
+    static void isiArray(){
+        nomorRekaMedis[0] = 12334;
+        nomorRekaMedis[1] = 12311;
+        nomorRekaMedis[2] = 15334;
+        nomorRekaMedis[3] = 12313;
+        nomorRekaMedis[4] = 26713;
+
     }
     static void menuAwal(){
         Scanner aria = new Scanner(System.in);
@@ -110,7 +118,7 @@ public class EnhancedLab {
 
     // Metode untuk memeriksa apakah nomor pasien sudah terdaftar atau tidak
     private static boolean nomorPeserta(short nomorPasien) {
-        for (short nomor : nomorPasienTerdaftar) {
+        for (short nomor : nomorRekaMedis) {
             if (nomor == nomorPasien) {
                 System.out.println("Selamat Datang Kembali!");
                 return true; // Nomor pasien terdaftar
