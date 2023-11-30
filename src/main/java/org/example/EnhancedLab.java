@@ -19,7 +19,7 @@ public class EnhancedLab {
         int menu;
 
         do {
-            System.out.println("=== SELAMAT DATANG ===");
+            System.out.println("Welcome!");
             System.out.println("1. Mendaftar Pasien");
             System.out.println("2. Mendaftar Pertama Kali");
             System.out.println("3. Keluar");
