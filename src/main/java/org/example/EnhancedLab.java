@@ -14,8 +14,8 @@ public class EnhancedLab {
     static short[] nomorRekaMedis = new short[50];
 
     public static void main(String[] args) {
-        int asep = 1;
-        switch (asep){
+        int Maria = 1;
+        switch (Maria){
             case 1:
                 menuAwal();
                 break;
